@@ -1,64 +1,57 @@
 @extends('laravel-model-observer::layouts.app')
 
 @section('title')
-Model Logs
+Posts
 @endsection
-
 @section('content')
 <!-- Content Header (Page header) -->
 <div class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0 text-dark">Model Logs</h1>
+                <h1 class="m-0 text-dark">Posts</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="/">Home</a></li>
-                    <li class="breadcrumb-item active">Model Logs</li>
+                    <li class="breadcrumb-item active">Posts</li>
                 </ol>
             </div><!-- /.col -->
         </div><!-- /.row -->
     </div><!-- /.container-fluid -->
 </div>
 <!-- /.content-header -->
-<style>
-    .clickable-row:hover {
-      cursor: pointer;
-    }
-</style>
 <!-- Main content -->
 <div class="container">
     <div class="row">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    Model Logs
-                    <span class="badge badge-primary pull-right">{{ count($logs) }} logs</span>
+                    Posts
+                    <span class="badge badge-primary pull-right">{{ count($posts) }} Posts</span>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table table-striped table-sm data-table">
                             <thead>
-                                <tr class="success">
+                                <tr>
                                     <th>S. No.</th>
                                     <th>User</th>
-                                    <th>Model</th>
+                                    <th>Title</th>
+                                    <th>Post Content</th>
+                                    <th>Created Time</th>
                                     <th>Action</th>
-                                    <th>IP</th>
-                                    <th>Time</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($logs as $log)
-                                <tr class="clickable-row" data-href="{{ url('actions/view/'. $log->id) }}"
-                                    data-toggle="tooltip" title="View Detail">
-                                    <td>{{$log->id}}</td>
-                                    <td>{{$log->user->email}}</td>
-                                    <td>{{$log->model}}</td>
-                                    <td>{{$log->action}}</td>
-                                    <td>{{$log->ip_address}}</td>
-                                    <td>{{$log->created_at}}</td>
+                                @foreach ($posts as $post)
+                                <tr>
+                                    <td>{{$post->id}}</td>
+                                    <td>{{$post->user->name}}</td>
+                                    <td>{{$post->title}}</td>
+                                    <td>{{$post->content}}</td>
+                                    <td>{{$post->created_at}}</td>
+                                    <td><a href="/post/edit/{{$post->id}}"><i class="fas fa-edit"></i></a>&nbsp; <a href="/post/delete/{{$post->id}}" class="text-danger"><i class="fas fa-trash"></i></a></td>
                                 </tr>
                                 @endforeach
                             </tbody>
@@ -69,11 +62,5 @@ Model Logs
         </div>
     </div>
 </div>
-<script type="text/javascript">
-    $(function() {
-        $(".clickable-row").click(function() {
-            window.location = $(this).data("href");
-        });
-    });
-</script>
+
 @endsection

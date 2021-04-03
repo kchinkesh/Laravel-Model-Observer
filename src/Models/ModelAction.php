@@ -1,6 +1,6 @@
 <?php
 
-namespace Kchinkesh\laravel-model-observer\src\Models;
+namespace Kchinkesh\LaravelModelObserver\Models;
 
 use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
@@ -46,6 +46,6 @@ class ModelAction extends Model
      */
     public function user()
     {
-        return $this->hasOne(User::class,'id');
+        return $this->belongsTo(User::class,'user_id');
     }
 }

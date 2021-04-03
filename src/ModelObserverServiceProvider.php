@@ -1,6 +1,6 @@
 <?php
 
-namespace Kchinkesh\laravel-model-observer;
+namespace Kchinkesh\LaravelModelObserver;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -14,7 +14,6 @@ class ModelObserverServiceProvider extends ServiceProvider
     public function register()
     {
         //
-		$this->app->make('Kchinkesh\laravel-model-observer\src\Http\Controllers\ModelObserverController');
     }
 
     /**
@@ -25,6 +24,7 @@ class ModelObserverServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        $this->app->make('Kchinkesh\LaravelModelObserver\Http\Controllers\ModelObserverController');
 		$this->loadRoutesFrom(__DIR__.'/routes/routes.php');
 		$this->loadViewsFrom(__DIR__.'/resources/views', 'laravel-model-observer');
 		$this->loadMigrationsFrom(__DIR__.'/Database/migrations');

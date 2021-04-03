@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('laravel-model-observer::layouts.app')
 
-@section('template_title')
+@section('title')
 {{$log->model}} Actions
 @endsection
 
@@ -10,7 +10,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0 text-dark">{{$log->model}}</h1>
+                <h3 class="m-0 text-dark">{{$log->model}}</h3>
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -29,7 +29,7 @@
         <div class="col-md-6">
             <div class="card h-100">
                 <div class="card-header">
-                    <i class="fa fa-th-large"></i> General Details
+                    <i class="fas fa-th-large"></i> General Details
                 </div>
                 <div class="card-body">
                     <table class="table">
@@ -48,7 +48,7 @@
         <div class="col-md-6">
             <div class="card h-100">
                 <div class="card-header">
-                    <i class="fa fa-refresh"></i> Changed Information
+                    <i class="fas fa-refresh"></i> Change Information
                     <a href="/actions"><span class="badge badge-primary pull-right"><i class="fa fa-arrow-left"></i>
                             back</span></a>
                 </div>
@@ -78,11 +78,11 @@
     $changed = ($log->models)['changed'] ;
     @endphp
 
-    <div class="row">
+    <div class="row mb-3">
         <div class="col-md-6">
             <div class="card h-100">
                 <div class="card-header">
-                    <i class="fa fa-trash"></i> Old Values
+                    <i class="fas fa-trash"></i> Old Values
                 </div>
                 <div class="card-body">
                     <table class="table">

@@ -1,9 +1,10 @@
 <?php
 
-namespace Kchinkesh\Laravel-model-observer\Traits;
+namespace Kchinkesh\LaravelModelObserver\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
+use Kchinkesh\LaravelModelObserver\Models\ModelAction;
 
 /**
  * Observable trait
@@ -63,7 +64,7 @@ trait ModelsObserver
     /* Retrieve the current login user guard */
     public static function activeUserGuard(){
         foreach(array_keys(config('auth.guards')) as $guard){
-            if(auth()->guard($guard)->check()){
+            if(Auth::guard($guard)->check()){
                 return $guard;
             }
         }
@@ -74,8 +75,8 @@ trait ModelsObserver
      * @return string
      */
     public static function logChange( Model $model, string $action ) {
-        UserAction::create([
-            'id'            => UserAction::max('id')+1,
+        ModelAction::create([
+            'id'            => ModelAction::max('id')+1,
             'user_id'       => static::activeUserId(),
             'model'         => static::class,
             'action'        => $action,
