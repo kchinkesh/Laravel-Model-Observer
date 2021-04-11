@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use kchinkesh\LaravelModelObserver\Http\Controllers\ModelObserverController;
-use kchinkesh\LaravelModelObserver\Http\Controllers\PostController;
+use kchinkesh\LaravelModelObserver\App\Http\Controllers\ModelObserverController;
+use kchinkesh\LaravelModelObserver\App\Http\Controllers\PostController;
 
 
 Route::middleware(['web','auth'])->group(function () {
