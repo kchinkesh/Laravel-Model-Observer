@@ -39,6 +39,6 @@ Model Activity Dashboard Routes
 ##### Model Logs
 ![Logs](https://github.com/kchinkesh/Laravel-Model-Observer/blob/main/logs.png)
 ##### New Post Created Log
-![New](https://github.com/kchinkesh/Laravel-Model-Observer/blob/main/detail_create.png)
+![New](https://github.com/kchinkesh/Laravel-Model-Observer/blob/main/deatil_create.png)
 ##### Post attributes change log
 ![Change](https://github.com/kchinkesh/Laravel-Model-Observer/blob/main/detail_change.png)
