@@ -8,10 +8,6 @@
             "email": "kumar.chinkesh@gmail.com"
         }
     ],
-    "require": {
-        "php": ">=7.3.0|^8.0",
-        "laravel/ui": "^3.2"
-    },
     "autoload": {
         "psr-4": {
             "kchinkesh\\LaravelModelObserver\\": "src/"
