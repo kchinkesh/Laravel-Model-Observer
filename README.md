@@ -10,12 +10,12 @@ A Laravel Package to Log and analize all actions performed on a Eloquent Model.
 ### Installation Instructions
 1. From Your Project's root Terminal run:
 <pre>composer require kchinkesh/laravel-model-observer</pre>
-1. Register the Package
+2. Register the Package
 - Laravel 5.5 and up Uses package auto discovery feature, no need to edit the config/app.php file.
-1. Run the migration to add the table to record the activities to:
+3. Run the migration to add the table to record the activities to:
 <pre>php artisan migrate</pre>
 - Note: If you want to specify a different table or connection make sure you update your .env file with the needed configuration variables.
-1. Optionally publish the packages views, config file, assets, and language files by running the following from your projects root folder:
+4. Optionally publish the packages views, config file, assets, and language files by running the following from your projects root folder:
 <pre>php artisan vendor:publish --tag=LaravelModelObserver</pre>
 ### Usage
 #### Trait Usage
@@ -23,7 +23,7 @@ Events can be recorded directly by using the trait inside your Model.
 To use the Trait:
 1. Include the call in the head of your model class file:
 <pre>use kchinkesh\LaravelModelObserver\App\Traits\ModelsObserver;</pre>
-1. Include the trait call in the opening of your model class:
+2. Include the trait call in the opening of your model class:
 <pre>use ModelsObserver;</pre>
 ### Routes
 Model Activity Dashboard Routes
