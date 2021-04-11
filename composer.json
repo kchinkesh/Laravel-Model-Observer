@@ -26,7 +26,7 @@
 	"extra": {
         "laravel": {
             "providers": [
-                "Kchinkesh\\Laravel-Model-Observer\\ModelObserverServiceProvider"
+                "Kchinkesh\\Laravel-Model-Observer\\src\\ModelObserverServiceProvider"
             ]
         }
     }
