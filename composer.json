@@ -12,9 +12,6 @@
         "php": ">=7.3.0|^8.0",
         "laravel/ui": "^3.2"
     },
-    "config": {
-        "sort-packages": true
-    },
     "autoload": {
         "psr-4": {
             "kchinkesh\\LaravelModelObserver\\": "src/"
@@ -27,6 +24,8 @@
             ]
         }
     },
-    "minimum-stability": "stable",
-    "prefer-stable": true
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
 }
