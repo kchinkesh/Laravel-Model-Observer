@@ -1,6 +1,6 @@
 <?php
 
-namespace Kchinkesh\LaravelModelObserver\Models;
+namespace kchinkesh\LaravelModelObserver\App\Models;
 
 use App\Models\User;
 use Illuminate\Database\Eloquent\Model;

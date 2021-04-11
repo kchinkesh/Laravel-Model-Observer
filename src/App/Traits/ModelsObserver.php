@@ -1,10 +1,10 @@
 <?php
 
-namespace Kchinkesh\LaravelModelObserver\Traits;
+namespace kchinkesh\LaravelModelObserver\App\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
-use Kchinkesh\LaravelModelObserver\Models\ModelAction;
+use kchinkesh\LaravelModelObserver\App\Models\ModelAction;
 
 /**
  * Observable trait

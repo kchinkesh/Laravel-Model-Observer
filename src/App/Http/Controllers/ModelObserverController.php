@@ -1,10 +1,9 @@
 <?php
 
-namespace Kchinkesh\LaravelModelObserver\Http\Controllers;
+namespace kchinkesh\LaravelModelObserver\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use Kchinkesh\LaravelModelObserver\Models\ModelAction;
+use kchinkesh\LaravelModelObserver\App\Models\ModelAction;
 
 class ModelObserverController extends Controller
 {

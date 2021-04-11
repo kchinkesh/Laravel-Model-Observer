@@ -1,11 +1,11 @@
 <?php
 
-namespace Kchinkesh\LaravelModelObserver\Http\Controllers;
+namespace kchinkesh\LaravelModelObserver\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Kchinkesh\LaravelModelObserver\Models\Post;
+use kchinkesh\LaravelModelObserver\App\Models\Post;
 
 class PostController extends Controller
 {

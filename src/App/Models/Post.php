@@ -1,11 +1,11 @@
 <?php
 
-namespace Kchinkesh\LaravelModelObserver\Models;
+namespace kchinkesh\LaravelModelObserver\App\Models;
 
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Kchinkesh\LaravelModelObserver\Traits\ModelsObserver;
+use kchinkesh\LaravelModelObserver\App\Traits\ModelsObserver;
 
 class Post extends Model
 {
