@@ -16,19 +16,18 @@ A Laravel Package to Log and analize all actions performed on a Eloquent Model.
    <pre>php artisan migrate</pre>
    Note: If you want to specify a different table or connection make sure you update your .env file with the needed configuration variables.
 4. Optionally publish the packages views, config file, assets, and language files by running the following from your projects root folder:
-<pre>php artisan vendor:publish --tag=LaravelModelObserver</pre>
+   <pre>php artisan vendor:publish --tag=LaravelModelObserver</pre>
 ### Usage
-#### Trait Usage
-Events can be recorded directly by using the trait inside your Model.
-To use the Trait:
+   #### Trait Usage
+   Events can be recorded directly by using the trait inside your Model. To use the Trait:
 1. Include the call in the head of your model class file:
-<pre>use kchinkesh\LaravelModelObserver\App\Traits\ModelsObserver;</pre>
+   <pre>use kchinkesh\LaravelModelObserver\App\Traits\ModelsObserver;</pre>
 2. Include the trait call in the opening of your model class:
-<pre>use ModelsObserver;</pre>
+   <pre>use ModelsObserver;</pre>
 ### Routes
-Model Activity Dashboard Routes
- - /actions
- - /actions/view/{id}
+   Model Activity Dashboard Routes
+   - /actions
+   - /actions/view/{id}
 ## Screenshots
 ##### New Post
 ![New Post](https://github.com/kchinkesh/Laravel-Model-Observer/blob/main/create.png)
