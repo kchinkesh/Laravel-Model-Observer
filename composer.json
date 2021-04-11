@@ -1,25 +1,33 @@
 {
     "name": "kchinkesh/laravel-model-observer",
     "description": "A Simple Laravel Package to observe,log and anlaize any changes to Eloquent Model using trait.",
-    "type": "library",
+	"license": "MIT",
+	"require": {
+        "php": "^7.4|^8.0",
+        "illuminate/contracts": "^8.0"
+    },
+	"require-dev": {
+        "phpunit/phpunit": "^9.3"
+    },
     "authors": [
         {
             "name": "Chinkesh Kumar",
             "email": "kumar.chinkesh@gmail.com"
         }
     ],
-	"minimum-stability": "dev",
-	"extra": {
-        "laravel": {
-            "providers": [
-                "Kchinkesh\\laravel-model-observer\\ModelObserverServiceProvider"
-            ]
-        }
+	"config": {
+        "sort-packages": true
     },
     "autoload": {
         "psr-4": {
-            "Kchinkesh\\Laravel-model-observer\\": "src/"
+            "Kchinkesh\\Laravel-model-observer\\": "src"
         }
     },
-    "require": {}
+	"extra": {
+        "laravel": {
+            "providers": [
+                "Kchinkesh\\Laravel-Model-Observer\\ModelObserverServiceProvider"
+            ]
+        }
+    }
 }
