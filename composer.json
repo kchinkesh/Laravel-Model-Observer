@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Kchinkesh\\Laravel-model-observer\\": "src"
+            "kchinkesh\\laravel-model-observer\\": "src"
         }
     },
     "extra": {
