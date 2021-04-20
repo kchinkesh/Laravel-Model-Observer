@@ -1,7 +1,7 @@
 # Laravel Eloquent Model Logger
 A Laravel Package to Log and analize all actions performed on a Eloquent Model.
 
-![Laravel Model Logger](https://github.com/Kchinkesh/Laravel-Model-Observer/blob/main/logger.png?raw=true)
+![Laravel Model Logger](https://github.com/Kchinkesh/Eloquent-Model-Logger/blob/main/logger.png?raw=true)
 
 ### Requirements
 - Laravel 7+
