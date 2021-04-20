@@ -1,7 +1,7 @@
-# Laravel Eloquent Model Logger
+# Laravel Model Observer
 A Laravel Package to Log and analize all actions performed on a Eloquent Model.
 
-![Laravel Model Logger](https://github.com/Kchinkesh/Eloquent-Model-Logger/blob/main/logger.png?raw=true)
+![Laravel Model Logger](https://github.com/Kchinkesh/Laravel-Model-Observer/blob/main/logger.png?raw=true)
 
 ### Requirements
 - Laravel 7+
@@ -9,7 +9,7 @@ A Laravel Package to Log and analize all actions performed on a Eloquent Model.
 
 ### Installation Instructions
 1. From Your Project's root Terminal run:
-   <pre>composer require kchinkesh/eloquent-model-logger</pre>
+   <pre>composer require kchinkesh/laravel-model-observer</pre>
 2. Register the Package
    - Laravel 5.5 and up Uses package auto discovery feature, no need to edit the config/app.php file.
 3. Run the migration to add the table to record the activities to:
@@ -30,14 +30,14 @@ A Laravel Package to Log and analize all actions performed on a Eloquent Model.
    - /actions/view/{id}
 ## Screenshots
 ##### New Post
-![New Post](https://github.com/kchinkesh/Eloquent-Model-Logger/blob/main/create.png)
+![New Post](https://github.com/kchinkesh/Laravel-Model-Observer/blob/main/create.png)
 ##### Posts 
-![Posts](https://github.com/kchinkesh/Eloquent-Model-Logger/blob/main/posts.png)
+![Posts](https://github.com/kchinkesh/Laravel-Model-Observer/blob/main/posts.png)
 ##### Edit Post
-![Edit Post](https://github.com/kchinkesh/Eloquent-Model-Logger/blob/main/edit.png)
+![Edit Post](https://github.com/kchinkesh/Laravel-Model-Observer/blob/main/edit.png)
 ##### Model Logs
-![Logs](https://github.com/kchinkesh/Eloquent-Model-Logger/blob/main/logs.png)
+![Logs](https://github.com/kchinkesh/Laravel-Model-Observer/blob/main/logs.png)
 ##### New Post Created Log
-![New](https://github.com/kchinkesh/Eloquent-Model-Logger/blob/main/deatil_create.png)
+![New](https://github.com/kchinkesh/Laravel-Model-Observer/blob/main/deatil_create.png)
 ##### Post attributes change log
-![Change](https://github.com/kchinkesh/Eloquent-Model-Logger/blob/main/detail_change.png)
+![Change](https://github.com/kchinkesh/Laravel-Model-Observer/blob/main/detail_change.png)
